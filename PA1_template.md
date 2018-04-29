@@ -31,7 +31,7 @@ stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
-![alt text] https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-5.png
+![alt text](https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-5.png)
 
 ##### 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -59,7 +59,8 @@ ggplot(data=averageStepsPerTimeBlock, aes(x=interval, y=meanSteps)) +
     ylab("average number of steps taken") 
 ```
 
-![alt text] https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-8.png
+![alt text]
+(https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-8.png)
 
 ##### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -97,7 +98,7 @@ stepsByDayImputed <- tapply(activityDataImputed$steps, activityDataImputed$date,
 qplot(stepsByDayImputed, xlab='Total steps per day (Imputed)', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
-![alt text] (https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-12.png)
+![alt text](https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-12.png)
 
 ##### ... and Calculate and report the mean and median total number of steps taken per day. 
 
@@ -131,4 +132,4 @@ ggplot(averagedActivityDataImputed, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
-![alt text] https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-15.png
+![alt text](https://github.com/aarunibhugul/RepData_PeerAssessment1/blob/master/Figures/unnamed-chunk-15.png)
